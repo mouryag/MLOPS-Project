@@ -1,5 +1,6 @@
 from setuptools import setup, find_packages
 from typing import List
+import os
 # from test import get_requirements
 
 with open('README.md', 'r', encoding='utf-8') as f:
@@ -10,6 +11,9 @@ HYPEN_E_DOT='-e .'
 
 def get_requirements(file_path:str)->List[str]:
     requirements = []
+
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(base_dir, file_path)
     with open(file_path) as f:
         requirements=f.readlines()
         requirements=[req.replace("\n","")for req in requirements]

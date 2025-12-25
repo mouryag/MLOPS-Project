@@ -58,7 +58,7 @@ jobs:
 
   publish:
     needs: test
-    if: github.event_name == 'release'
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
 
     steps:

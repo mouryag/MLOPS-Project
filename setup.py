@@ -22,7 +22,7 @@ def get_requirements(file_path:str)->List[str]:
             requirements.remove(HYPEN_E_DOT)
     return requirements
 
-__version__ = "0.0.6"
+__version__ = "0.0.5"
 REPO_NAME = "MLOPS-Project"
 PKG_NAME= "dbautomater"
 AUTHOR_USER_NAME = "mouryag"
@@ -30,7 +30,7 @@ AUTHOR_EMAIL = "mouryag99@gmail.com"
 
 setup(
     name=PKG_NAME,
-    version=__version__,
+    version="0.0.5",
     author=AUTHOR_USER_NAME,
     author_email=AUTHOR_EMAIL,
     description="while learning mlops I created this python package for connecting with database.",

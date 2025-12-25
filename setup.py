@@ -22,7 +22,7 @@ def get_requirements(file_path:str)->List[str]:
             requirements.remove(HYPEN_E_DOT)
     return requirements
 
-__version__ = "0.0.5"
+__version__ = "0.0.6"
 REPO_NAME = "MLOPS-Project"
 PKG_NAME= "dbautomater"
 AUTHOR_USER_NAME = "mouryag"
@@ -34,8 +34,8 @@ setup(
     author=AUTHOR_USER_NAME,
     author_email=AUTHOR_EMAIL,
     description="while learning mlops I created this python package for connecting with database.",
-    long_description="",
-    long_description_content="text/markdown",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
     project_urls={
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",

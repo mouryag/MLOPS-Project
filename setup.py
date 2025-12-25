@@ -22,7 +22,7 @@ def get_requirements(file_path:str)->List[str]:
             requirements.remove(HYPEN_E_DOT)
     return requirements
 
-__version__ = "0.0.4"
+__version__ = "0.0.5"
 REPO_NAME = "MLOPS-Project"
 PKG_NAME= "dbautomater"
 AUTHOR_USER_NAME = "mouryag"
